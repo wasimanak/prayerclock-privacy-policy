@@ -1,24 +1,224 @@
 <!DOCTYPE html>
-<html>
-<head><title>PrayerClock - Privacy Policy</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — PrayerClock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .logo {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 32px rgba(16,185,129,0.3);
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(16,185,129,0.15);
+            border: 1px solid rgba(16,185,129,0.3);
+            color: #10b981;
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-top: 12px;
+        }
+        .card {
+            background: rgba(30,41,59,0.8);
+            border: 1px solid rgba(148,163,184,0.1);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        .icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .icon-green { background: rgba(16,185,129,0.15); }
+        .icon-blue  { background: rgba(59,130,246,0.15); }
+        .icon-amber { background: rgba(245,158,11,0.15); }
+        .icon-purple{ background: rgba(139,92,246,0.15); }
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #f1f5f9;
+        }
+        p, li {
+            font-size: 0.92rem;
+            line-height: 1.7;
+            color: #94a3b8;
+        }
+        ul {
+            list-style: none;
+            margin-top: 12px;
+        }
+        ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+            padding: 12px 16px;
+            background: rgba(15,23,42,0.5);
+            border-radius: 10px;
+        }
+        ul li::before {
+            content: "✓";
+            color: #10b981;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+        .links-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 12px;
+        }
+        a {
+            color: #10b981;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(16,185,129,0.1);
+            border: 1px solid rgba(16,185,129,0.25);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+        a:hover {
+            background: rgba(16,185,129,0.2);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #475569;
+            font-size: 0.82rem;
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid rgba(148,163,184,0.1);
+            margin: 24px 0;
+        }
+        .highlight {
+            color: #10b981;
+            font-weight: 500;
+        }
+    </style>
+</head>
 <body>
-<h1>Privacy Policy — PrayerClock</h1>
-<p><b>Last updated:</b> April 2025</p>
+<div class="container">
+    <div class="header">
+        <div class="logo">🕌</div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">PrayerClock — Prayer Times & Azan App</p>
+        <span class="badge">Last updated: April 2025</span>
+    </div>
 
-<h2>Information We Collect</h2>
-<ul>
-  <li><b>Location:</b> Used only to calculate accurate prayer times for your city. Not stored on any server.</li>
-  <li><b>Usage Analytics:</b> Firebase Analytics collects anonymous usage data to improve the app.</li>
-  <li><b>Advertising:</b> Google AdMob may collect device identifiers for personalized ads.</li>
-</ul>
+    <div class="card">
+        <div class="card-header">
+            <div class="icon icon-green">📍</div>
+            <h2>Location Data</h2>
+        </div>
+        <ul>
+            <li>Your device location is used <span class="highlight">only</span> to calculate accurate prayer times for your city.</li>
+            <li>Location data is <span class="highlight">never stored on any server</span> or shared with third parties.</li>
+            <li>You can switch to Manual Location in Settings at any time.</li>
+        </ul>
+    </div>
 
-<h2>Third-Party Services</h2>
-<ul>
-  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-  <li><a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
-</ul>
+    <div class="card">
+        <div class="card-header">
+            <div class="icon icon-blue">📊</div>
+            <h2>Analytics & Advertising</h2>
+        </div>
+        <p>We use the following third-party services to improve app quality and support free access:</p>
+        <ul>
+            <li><strong style="color:#e2e8f0">Firebase Analytics</strong> — Collects anonymous, aggregated usage data (no personal information).</li>
+            <li><strong style="color:#e2e8f0">Google AdMob</strong> — May use device identifiers to show relevant advertisements.</li>
+        </ul>
+        <hr class="divider">
+        <div class="links-row">
+            <a href="https://policies.google.com/privacy" target="_blank">↗ Google Privacy Policy</a>
+            <a href="https://firebase.google.com/support/privacy" target="_blank">↗ Firebase Privacy Policy</a>
+            <a href="https://support.google.com/admob/answer/6128543" target="_blank">↗ AdMob Privacy</a>
+        </div>
+    </div>
 
-<h2>Contact</h2>
-<p>WhatsApp: +923477442050</p>
+    <div class="card">
+        <div class="card-header">
+            <div class="icon icon-amber">🔔</div>
+            <h2>Permissions Used</h2>
+        </div>
+        <ul>
+            <li><strong style="color:#e2e8f0">Location</strong> — To calculate prayer times based on your city.</li>
+            <li><strong style="color:#e2e8f0">Notifications</strong> — To send Azan (prayer call) alerts at prayer times.</li>
+            <li><strong style="color:#e2e8f0">Boot on Startup</strong> — To reschedule alarms after device restarts.</li>
+            <li><strong style="color:#e2e8f0">Battery Optimization</strong> — To ensure Azan is never missed in background.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div class="icon icon-purple">🔒</div>
+            <h2>Data Security</h2>
+        </div>
+        <ul>
+            <li>All prayer time calculations happen <span class="highlight">entirely on your device</span>. No data is sent to our servers.</li>
+            <li>We do <span class="highlight">not collect</span> names, emails, phone numbers or any personally identifiable information.</li>
+            <li>The app does not require account registration or login.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 PrayerClock. All rights reserved.</p>
+        <p style="margin-top:8px">By using this app, you agree to this Privacy Policy.</p>
+    </div>
+</div>
 </body>
 </html>
