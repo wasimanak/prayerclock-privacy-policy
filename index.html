@@ -6,6 +6,7 @@
     <title>Privacy Policy — PrayerClock</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        /* ... (Aap ka pehle wala CSS yahan aye ga, us mein koi tabdeeli nahi ki) ... */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
@@ -160,6 +161,7 @@
         <span class="badge">Last updated: April 2025</span>
     </div>
 
+    <!-- 1. Location Data -->
     <div class="card">
         <div class="card-header">
             <div class="icon icon-green">📍</div>
@@ -172,46 +174,65 @@
         </ul>
     </div>
 
+    <!-- 2. Analytics & Crash Reporting (UPDATED) -->
     <div class="card">
         <div class="card-header">
             <div class="icon icon-blue">📊</div>
-            <h2>Analytics & Advertising</h2>
+            <h2>Analytics & Performance</h2>
         </div>
-        <p>We use the following third-party services to improve app quality and support free access:</p>
+        <p>We use the following third-party services to improve app stability and user experience:</p>
         <ul>
-            <li><strong style="color:#e2e8f0">Firebase Analytics</strong> — Collects anonymous, aggregated usage data (no personal information).</li>
-            <li><strong style="color:#e2e8f0">Google AdMob</strong> — May use device identifiers to show relevant advertisements.</li>
+            <li><strong style="color:#e2e8f0">Firebase Analytics</strong> — Collects anonymous usage stats to understand how the app is used.</li>
+            <li><strong style="color:#e2e8f0">Firebase Crashlytics</strong> — Collects technical crash reports (e.g., device model, OS version) to fix bugs.</li>
+            <li><strong style="color:#e2e8f0">Firebase Realtime Database</strong> — Used only to store anonymous app configuration settings and update checks.</li>
         </ul>
         <hr class="divider">
         <div class="links-row">
             <a href="https://policies.google.com/privacy" target="_blank">↗ Google Privacy Policy</a>
-            <a href="https://firebase.google.com/support/privacy" target="_blank">↗ Firebase Privacy Policy</a>
-            <a href="https://support.google.com/admob/answer/6128543" target="_blank">↗ AdMob Privacy</a>
+            <a href="https://firebase.google.com/support/privacy" target="_blank">↗ Firebase Privacy</a>
         </div>
     </div>
 
+    <!-- 3. Advertising (UPDATED) -->
+    <div class="card">
+        <div class="card-header">
+            <div class="icon icon-amber">💰</div>
+            <h2>Advertising</h2>
+        </div>
+        <ul>
+            <li><strong style="color:#e2e8f0">Google AdMob</strong> — Shows banner advertisements to support free development.</li>
+            <li>AdMob may use device identifiers (like Advertising ID) to provide personalized or non-personalized ads.</li>
+        </ul>
+        <div class="links-row">
+            <a href="https://support.google.com/admob/answer/6128543" target="_blank">↗ AdMob Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- 4. Permissions (UPDATED) -->
     <div class="card">
         <div class="card-header">
             <div class="icon icon-amber">🔔</div>
-            <h2>Permissions Used</h2>
+            <h2>Essential Permissions</h2>
         </div>
+        <p>To provide core functionality, the app requires:</p>
         <ul>
-            <li><strong style="color:#e2e8f0">Location</strong> — To calculate prayer times based on your city.</li>
-            <li><strong style="color:#e2e8f0">Notifications</strong> — To send Azan (prayer call) alerts at prayer times.</li>
-            <li><strong style="color:#e2e8f0">Boot on Startup</strong> — To reschedule alarms after device restarts.</li>
-            <li><strong style="color:#e2e8f0">Battery Optimization</strong> — To ensure Azan is never missed in background.</li>
+            <li><strong style="color:#e2e8f0">Overlay (Display over apps)</strong> — Used to automatically show the Azan screen when the phone is locked.</li>
+            <li><strong style="color:#e2e8f0">Battery Optimization Bypass</strong> — Ensures the system does not kill the app so Azan is never missed.</li>
+            <li><strong style="color:#e2e8f0">Notifications</strong> — To deliver Azan sounds and prayer time alerts.</li>
+            <li><strong style="color:#e2e8f0">Run at Startup</strong> — To reschedule prayer alarms after you restart your device.</li>
         </ul>
     </div>
 
+    <!-- 5. Data Security -->
     <div class="card">
         <div class="card-header">
             <div class="icon icon-purple">🔒</div>
-            <h2>Data Security</h2>
+            <h2>User Data Security</h2>
         </div>
         <ul>
-            <li>All prayer time calculations happen <span class="highlight">entirely on your device</span>. No data is sent to our servers.</li>
-            <li>We do <span class="highlight">not collect</span> names, emails, phone numbers or any personally identifiable information.</li>
-            <li>The app does not require account registration or login.</li>
+            <li>We <span class="highlight">do not</span> collect personal data like your Name, Email, or Phone Number.</li>
+            <li>All prayer time calculations happen <span class="highlight">locally</span> on your device.</li>
+            <li>Anonymous device IDs (Android ID) are used only to manage app updates and remote configuration.</li>
         </ul>
     </div>
 
